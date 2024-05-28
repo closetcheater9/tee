@@ -31,7 +31,7 @@ getgenv().Evolution = {
         ["Target Part"] = "Head", -- // Any Hitbox (Head, UpperTorso, HumanoidRootPart, LowerTorso)
         ["Target Part Offset"] = 0, -- // Offset if you have the target part to head and you set offset to -1.6 you will hit the torso
         ["Nearest Part To Cursor"] = false, -- // Sets target part to the nearest body part to your cursor
-        ["Closest Point"] = false, -- // Gets the closest point on the target part (not working rn)
+        ["Closest Point"] = true, -- // Gets the closest point on the target part (not working rn)
         ["Dot"] = true, -- // Visual (BROKEN ON ELECTRON)
         ["Line"] = false, -- // Visual (BROKEN ON ELECTRON)
         ["Shake"] = {
@@ -129,7 +129,7 @@ getgenv().Evolution = {
         }
     },
     ["Resolver"] = {
-        ["Enabled"] = false, -- // Resolve Anti Locks and Desyncs
+        ["Enabled"] = true, -- // Resolve Anti Locks and Desyncs
         ["Method"] = "Delta", -- // Delta, Move Direction, No Prediction, Recalculate
         ["Keybind Enabled"] = false, -- // Will toggle resolver when you press key
         ["Keybind"] = "T", -- // Keybind to toggle resolver
@@ -2509,7 +2509,7 @@ if Evolution["Options"]["Internal"].Enabled then
         local SaveManager = loadstring(game:HttpGet('https://raw.githubusercontent.com/laagginq/LinoriaUI/main/save.lua'))()
         --local SaveManager = loadstring(game:HttpGet('https://pastebin.com/raw/cvjENmE0'))()
         
-        local title = "Evolution"
+        local title = "EvolutionConfigSetterClosetCheater9"
 
         if string.find(LRM_UserNote,"dev") then 
             title = "Evolution | Developer Build"
